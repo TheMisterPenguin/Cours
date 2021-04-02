@@ -1,0 +1,4 @@
+language = "c"
+#run = "gcc  C/TP/TP4/TP4.c ;mv a.out C/TP/TP4/TP4.prog; ./C/TP/TP4/TP4.prog"
+run = "cd C/TP/TP4; gcc TP4.c ;mv a.out TP4.prog; ./TP4.prog"
+#run = "gcc  TP4.c ; ./a.out"
