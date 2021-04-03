@@ -83,6 +83,20 @@ int rechercheJoueurParNom(char *nom, table *t){
     return -1;
 }
 
+int ecrireFichier(char *nomFichier, table *t) {
+  int nbj = 0;
+  joueur * j;
+  FILE *f = fopen(nomFichier, "w");
+  if (f == NULL) 
+    return 0;
+    while(nbj < t->nbJoueurs) {
+      j = &(t->joueurs[nbj]);
+      fprintf(f, "%2d;%2.1f;%2.1f;%2.1f;%2.1f;%2.1f;%2.1f;%2.1f;%2.1f;%s\n", (j->age), (j->fg), (j->fga), (j->p3), (j->p3a), (j->ft), (j->fta), (j->orb), (j->drb), (j->nom));
+      nbj++;
+    }
+    fclose(f);
+    return 1;
+}
 
 int main(){
     table t;
@@ -94,5 +108,6 @@ int main(){
     printf("%d\n",rechercheJoueurParNom("Paul Millsap", &t));
     tt = Select(&t, j30pr3pts);
     afficherTable(tt);
+    ecrireFichier("nba2021.csv", tt);
     return 0;
 }
