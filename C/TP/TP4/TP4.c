@@ -84,11 +84,9 @@ int rechercheJoueurParNom(char *nom, table *t){
 }
 
 int ecrireFichier(char *nomFichier, table *t) {
-  int nbj = 0;
-  joueur * j;
-  FILE *f = fopen(nomFichier, "w");
-  if (f == NULL) 
-    return 0;
+    int nbj = 0;
+    joueur * j;
+    FILE *f = fopen(nomFichier, "w");
     while(nbj < t->nbJoueurs) {
       j = &(t->joueurs[nbj]);
       fprintf(f, "%2d;%2.1f;%2.1f;%2.1f;%2.1f;%2.1f;%2.1f;%2.1f;%2.1f;%s\n", (j->age), (j->fg), (j->fga), (j->p3), (j->p3a), (j->ft), (j->fta), (j->orb), (j->drb), (j->nom));
@@ -99,15 +97,54 @@ int ecrireFichier(char *nomFichier, table *t) {
 }
 
 int main(){
+    char choix;
+    int dummy = 0;
     table t;
     table *tt;
-    lireFichier("nba2015.csv", &t);
-    //printf("%d\n", lireFichier("nba2015.csv", &t));
-    //afficherJoueur(&(t.joueurs[0]));
+    char *nomFich;
+    nomFich = malloc(sizeof(char*) * 81);
+    do{
+    printf("Quel fichier voulez vous lire ? : ");
+    scanf("%s", nomFich);
+    if((dummy = lireFichier(nomFich, &t)) != 1)
+        printf("Ce fichier n'existe pas !\n");
+    }while(dummy != 1);
     afficherTable(&t);
-    printf("%d\n",rechercheJoueurParNom("Paul Millsap", &t));
-    tt = Select(&t, j30pr3pts);
-    afficherTable(tt);
-    ecrireFichier("nba2021.csv", tt);
+    do{
+    printf("Voulez vous trier les joueurs de plus de treinte ans ? (o/n) ");
+    scanf("\n%c", &choix);
+    }while(choix != 'o' && choix != 'n');
+        if(choix == 'o'){
+        tt = Select(&t, joueur30ans);
+        afficherTable(tt);
+        do{
+        printf("Voulez vous enregistrer cette chaine ? (o/n) ");
+        scanf("\n%c", &choix);
+        }while(choix != 'o' && choix != 'n');
+        if(choix == 'o'){
+            printf("Sous quel nom voulez vous l'enregistrer ? : ");
+            scanf("%s", nomFich);
+            ecrireFichier(nomFich, tt);
+        }
+        return 0;
+    }
+    do{
+    printf("Voulez vous trier les joueurs qui ont un pourcentage de réussite supérieur à 30 %% aux 3 points ? (o/n) ");
+    scanf("\n%c", &choix);
+    }while(choix != 'o' && choix != 'n');
+    if(choix == 'o'){
+        tt = Select(&t, j30pr3pts);
+        afficherTable(tt);
+        do{
+        printf("Voulez vous enregistrer cette chaine ? (o/n) ");
+        scanf("\n%c", &choix);
+        }while(choix != 'o' && choix != 'n');
+        if(choix == 'o'){
+            printf("Sous quel nom voulez vous l'enregistrer ? : ");
+            scanf("%s", nomFich);
+            ecrireFichier(nomFich, tt);
+        }
+        return 0;
+    }
     return 0;
 }
