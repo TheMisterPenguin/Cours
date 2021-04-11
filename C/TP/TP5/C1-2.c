@@ -1,8 +1,12 @@
+// DESPERT Ange
+// Le Mans Université
+// Github : https://github.com/TheMisterPenguin/Cours
+
 #include <stdio.h>
 #include <string.h>
 
 int conversion(char c){
-    switch (c) {
+    switch (c) { // Conversion des lettres en fonction de leur valeur
         case 'M' : return 1000;
         case 'D' : return  500;
         case 'C' : return  100;
@@ -14,15 +18,16 @@ int conversion(char c){
     }
 }
 
-int main(int argc,char *argv[]){
-    char *nb=argv[1];
+int main(int argc, char *argv[]){
+    char *nb=argv[1]; // Nombre à déchiffrer donnée en argument
     int nombre = 0;
     int i, temp;
-    for(i = strlen(nb) - 2, nombre = conversion(nb[strlen(nb) - 1]); i >= 0; i--){
-        if((temp = conversion(nb[i])) < conversion(nb[i+1]))
-            nombre -= temp;
+    for(i = strlen(nb) - 2, nombre = conversion(nb[strlen(nb) - 1]); i >= 0; i--){ // On parcourt la chaine
+        if((temp = conversion(nb[i])) < conversion(nb[i+1])) // Si nb(gauche) < nb(droit) <=> I < V
+            nombre -= temp;	
         else
             nombre += temp;
     }
     printf("%d\n", nombre);
+    return 0;
 }
