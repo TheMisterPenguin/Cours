@@ -40,5 +40,5 @@ void avancer (FILE *f, tortue *tor, int deplact){
         case SUD    : tor->y -= deplact; break;
         case OUEST  : tor->x -= deplact; break;      
     }
-    fprintf(f, "%d %d lineto", tor->x, tor->y); // Avancement fichier
+    fprintf(f, "%d %d lineto\n", tor->x, tor->y); // Avancement fichier
 }
