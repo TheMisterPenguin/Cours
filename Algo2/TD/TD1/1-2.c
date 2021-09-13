@@ -1,10 +1,24 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int estPair(int nb){
     //Fonction qui renvoie vrai si le nombre nb est estPair
 
     return (nb % 2);
 }
+
+char* nomFichier(void){
+    //Fonction qui récupère la ne nom du fichier saisi au clavier
+    char* nom;
+
+    nom = malloc(sizeof (char) * 200);
+    printf("Saisir le nom du fichier : ");
+    scanf("%s", nom);
+    nom = realloc(nom, sizeof (char) * (strlen(nom) + 1));
+
+    return nom;
+}
+
 
 int chargerFich(FILE* fich){
     //Fonction qui charge ouvre le fichier fich
@@ -36,10 +50,18 @@ int lecture(FILE* fich){
 
 int main(void){
     FILE* f;
+    char* nom_f;
     int test_val;
     int resultat = 0 ;
 
-    f = fopen("nombres.txt", "r");
+    while(1){
+        nom_f = nomFichier();
+        f = fopen(nom_f, "r");
+        if(f != NULL)
+            break;
+        printf("Ce fichier n'existe pas.\n");
+    }
+    
     fscanf(f,"%i", &test_val);
 
     while(! feof(f)){
