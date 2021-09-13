@@ -13,7 +13,20 @@ int estDiviseur(int nb, int test){
     return (nb % test);
 }
 
+void afficherTable(diviseurs d, FILE* f){
+    //Fonction qui affiche le tableau de diviseurs
+    int i;
+
+    f = fopen("diviseurs.txt","w");
+    for(i = 0; i < d.taille; i++)
+        fprintf(f," %i ", d.liste_div[i]);
+    fprintf(f," \n");
+    fclose(f);
+    
+}
+
 int main(void){
+    FILE* f = NULL;
     diviseurs div;
     int i;
     int nombre;
@@ -22,10 +35,12 @@ int main(void){
     scanf("%i", &nombre);
     div.taille = 0;
     for(i = 1; i <= nombre; i++){
-        if(estDiviseur(nombre, i) == 1) {
+        if(estDiviseur(nombre, i) == 0) {
             div.liste_div[div.taille] = i;
             div.taille++;
         }
     }
+    afficherTable(div, f);
 
+    return 0;
 }
