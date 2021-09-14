@@ -19,7 +19,23 @@ void creer_fichier(void){
     
 }
 
+void afficher_fichier(void){
+    //Fonction qui affiche le contenu du fichier donnees.txt à l'écran
+    FILE *f;
+    int tampon;
+
+    f = fopen("donnees.txt", "r");
+    fscanf(f, "%i", &tampon);
+    printf("Voici ce qui se trouve dans le fichier donnees.txt\n");
+    while(! feof(f)){
+        printf(" %i ", tampon);
+        fscanf(f, "%i", &tampon);
+    }
+    fclose(f);
+}
+
 int main(void){
     creer_fichier();
+    afficher_fichier();
     return 0;
 }
