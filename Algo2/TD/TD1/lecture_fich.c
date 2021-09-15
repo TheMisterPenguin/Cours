@@ -21,7 +21,7 @@ int main(void){
     int i;
 
     
-
+//srand() % (b_sup-b_inf +1)
     for(i = 0; i < N; i++){
         f1 = fopen("lapin1.txt", "r");
         f2 = fopen("lapin2.txt", "r");
