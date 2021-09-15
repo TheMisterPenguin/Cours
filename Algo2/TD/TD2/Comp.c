@@ -42,6 +42,7 @@ int main(){
     t_personnage p2 = {"Gérard", zombie, 65, 55, 15, 1};
     t_personnage p3 = {"Edouard", vampire, 0, 0, 1, "AB"};
     t_personnage p4 = {"Stéphane", geant, -500, 500, 150, taille};
+    //t_personnage p4 = {"Stéphane", geant, -500, 500, 150, ((float)15.35)};
 
     cara_affich(p1);
     cara_affich(p2);
