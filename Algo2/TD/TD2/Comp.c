@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 typedef enum{magicienne, geant, zombie, vampire} t_categorie;
 const char *cat[4] = {"Magicienne", "Géant", "Zombie", "Vampire"};
@@ -7,7 +8,7 @@ typedef union{
     char grade;
     float taille;
     int vitesse;
-    char gs[3];
+    char gs[4];
 } t_valeur;
 
 typedef struct{
@@ -37,12 +38,12 @@ void cara_affich(t_personnage p){
 }
 
 int main(){
-    float taille = 15.35;
-    t_personnage p1 = {"Claudine", magicienne, 55, 65, 10, 'A'};
-    t_personnage p2 = {"Gérard", zombie, 65, 55, 15, 1};
-    t_personnage p3 = {"Edouard", vampire, 0, 0, 1, "AB"};
-    t_personnage p4 = {"Stéphane", geant, -500, 500, 150, taille};
-    //t_personnage p4 = {"Stéphane", geant, -500, 500, 150, ((float)15.35)};
+    t_personnage p1 = {"Claudine", magicienne, 55, 65, 10, {'A'}};
+    t_personnage p2 = {"Gérard", zombie, 65, 55, 15, {1}};
+    t_personnage p3 = {"Edouard", vampire, 0, 0, 1, {"dma"}};
+    t_personnage p4 = {"Stéphane", geant, -500, 500, 150, {00.000}};
+    strcpy(p3.val.gs, "AB+");
+    p4.val.taille = 15.350;
 
     cara_affich(p1);
     cara_affich(p2);
