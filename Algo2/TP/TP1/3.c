@@ -109,6 +109,11 @@ void charger(t_pers* pers, int* nb_pers){
 }
 
 void ajouter(t_pers* pers, int* nb_pers){	
+    //Fonction qui permet d'ajouter un personnage à la base
+
+    pers += *nb_pers;
+    printf("Saisir le nom du personnage (20 caractères max) : ");
+    scanf("%s", pers->nom);
 }
 
 void supprimer(t_pers* pers, int* nb_pers){	
@@ -135,7 +140,8 @@ int main(void){
 		printf(" 3 - Afficher le nom du personnage qui a le plus de points de vie\n");
 		printf(" 4 - Sauvegarder la base\n");
 		printf(" 5 - Charger la base depuis le fichier\n");
-		printf(" 6 - Quitter\n");
+        printf(" 6 - Ajouter un personnage\n");
+		printf(" 8 - Quitter\n");
 		printf("Votre choix : ");
 		scanf("%i",&choix);
 
@@ -146,11 +152,12 @@ int main(void){
 			case 3:  afficher_max(pers,nb_pers); break;
 			case 4:  sauvegarder(pers,nb_pers); break;
 			case 5:  charger(pers,&nb_pers); break;
-			case 6:  break;
+            case 6:  ajouter(pers,&nb_pers); break;
+			case 8:  break;
 			default: printf("Erreur: votre choix doit etre compris entre 1 et 6\n");
 		}
 	}
-	while(choix!=6);
+	while(choix!=8);
 	printf("Au revoir !\n");
 	return EXIT_SUCCESS;
 }
