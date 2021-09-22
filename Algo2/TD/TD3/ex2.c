@@ -100,6 +100,7 @@ void marquer_chemin(int mat[M][N],int xa,int ya){
                 }
             }
         }
+        printf("Coordonées : %i/%i\n", px + 1, py + 1);
     }
 }
 
