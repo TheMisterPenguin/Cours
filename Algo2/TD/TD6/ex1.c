@@ -1,5 +1,7 @@
 #include <stdlib.h>
-#include <stdbool.h>
+#include <stdio.h>
+
+
 
 
 typedef struct element {
@@ -44,22 +46,27 @@ void ajouter_tete(int v){
     temp -> precedent = NULL;
     tete = temp;
 
+
 }
 
 void oter_tete(int *v){
     //Fonction qui retire une valeur de la deque 
-    int n;
     t_element *p;
 
     if(!deque_vide()){
-        n = tete ->nombre;
+        
+        *v = tete ->nombre;
         p = tete;
-        tete = tete ->suivant;
-        tete -> precedent = NULL;
+        if(!(tete->suivant == NULL)){
+            tete = p ->suivant;
+            tete -> precedent = NULL;
+        }
+        else{
+            tete = NULL;
+            queue = NULL;
+        }
         free(p);
     }
-
-    *v = n;
 }
 
 void ajouter_queue(int v){
@@ -78,22 +85,41 @@ void ajouter_queue(int v){
         queue ->suivant = temp;
     }
     temp -> suivant = NULL;
-    tete = temp;
+    queue= temp;
 
 }
 
 void oter_queue(int *v){
     //Fonction qui retire une valeur de la deque 
-    int n;
     t_element *p;
 
     if(!deque_vide()){
-        n = queue ->nombre;
+        *v = queue ->nombre;
         p = queue;
-        queue = queue ->precedent;
-        queue -> suivant = NULL;
+        if(!(queue->precedent == NULL)){
+            queue = p ->precedent;
+            queue -> suivant = NULL;
+        }
+        else{
+            tete = NULL;
+            queue = NULL;
+        }
         free(p);
     }
-
-    *v = n;
 }
+
+int main(void){
+    int x,y;
+
+    init_deque();
+    printf("%i\n", deque_vide());
+    ajouter_queue(5);
+    ajouter_queue(4);
+    oter_queue(&x);
+    oter_queue(&y);
+    printf("%i %i\n", x, y);
+
+
+    return 0;
+}
+
