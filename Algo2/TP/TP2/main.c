@@ -70,7 +70,6 @@ void debug(int mat[M][N]){
     }
 }
 
-
 void calculer_voisins(t_cellule automate[M][N], int nb_voisins[N][N]){
     //Fonction qui calcule le nombre de voisins de cellules vivantes et l'inscrit
     //dans la matrice de calcul
