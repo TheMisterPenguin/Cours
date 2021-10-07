@@ -1,7 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
+
+#ifdef _WIN32
+#include <windows.h>
+#define system("clear") system("cls")
+#else
 #include <unistd.h>
+#endif
+    
 
 #define N 80
 #define M 50
