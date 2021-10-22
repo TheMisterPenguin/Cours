@@ -1,0 +1,10 @@
+{
+    "makefile.extensionOutputFolder": "./.vscode",
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "c:\\Users\\anged\\Documents\\GitHub\\Cours\\Algo2\\TD\\TD8",
+            "binaryPath": "c:\\Users\\anged\\Documents\\GitHub\\Cours\\Algo2\\TD\\TD8\\ex1.exe",
+            "binaryArgs": []
+        }
+    ]
+}

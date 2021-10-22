@@ -1,0 +1,7 @@
+mingw32-make.exe --dry-run --always-make --keep-going --print-directory
+mingw32-make.exe: Entering directory 'c:/Users/anged/Documents/GitHub/Cours/Algo2/TP/TP5/ex2'
+gcc -c listesF.c
+gcc -c fourmis.c
+gcc fourmis.o listesF.o -o fourmis.exe
+mingw32-make.exe: Leaving directory 'c:/Users/anged/Documents/GitHub/Cours/Algo2/TP/TP5/ex2'
+ 

@@ -1,0 +1,7 @@
+mingw32-make.exe --dry-run --keep-going --print-directory
+mingw32-make.exe: Entering directory 'c:/Users/anged/Documents/GitHub/Cours'
+ 
+mingw32-make.exe: *** No targets specified and no makefile found.  Stop.
+ 
+mingw32-make.exe: Leaving directory 'c:/Users/anged/Documents/GitHub/Cours'
+ 

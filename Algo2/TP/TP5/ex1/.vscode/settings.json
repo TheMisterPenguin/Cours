@@ -1,0 +1,10 @@
+{
+    "makefile.extensionOutputFolder": "./.vscode",
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "c:\\Users\\anged\\Documents\\GitHub\\Cours\\Algo2\\TP\\TP5\\ex1",
+            "binaryPath": "c:\\Users\\anged\\Documents\\GitHub\\Cours\\Algo2\\TP\\TP5\\ex1\\tp5.exe",
+            "binaryArgs": []
+        }
+    ]
+}

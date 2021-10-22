@@ -1,0 +1,10 @@
+{
+    "makefile.extensionOutputFolder": "./.vscode",
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "c:\\Users\\anged\\Documents\\GitHub\\Cours\\Algo2\\TP\\TP5\\ex2",
+            "binaryPath": "c:\\Users\\anged\\Documents\\GitHub\\Cours\\Algo2\\TP\\TP5\\ex2\\fourmis",
+            "binaryArgs": []
+        }
+    ]
+}

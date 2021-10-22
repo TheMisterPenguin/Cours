@@ -1,0 +1,7 @@
+mingw32-make.exe --dry-run --always-make --keep-going --print-directory
+mingw32-make.exe: Entering directory 'c:/Users/anged/Documents/GitHub/Cours/Algo2/TD/TD8'
+gcc -c listeS.c
+gcc -c main.c
+gcc listeS.o main.o -o ex1.exe
+mingw32-make.exe: Leaving directory 'c:/Users/anged/Documents/GitHub/Cours/Algo2/TD/TD8'
+ 

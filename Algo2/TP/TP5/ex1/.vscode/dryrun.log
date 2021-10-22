@@ -1,0 +1,9 @@
+mingw32-make.exe dyn --dry-run --keep-going --print-directory
+mingw32-make.exe: Entering directory 'c:/Users/anged/Documents/GitHub/Cours/Algo2/TP/TP5/ex1'
+gcc -c tp5.c
+ 
+gcc -c liste_ptr.c -o liste.o
+ 
+gcc tp5.o liste.o -o tp5.exe
+mingw32-make.exe: Leaving directory 'c:/Users/anged/Documents/GitHub/Cours/Algo2/TP/TP5/ex1'
+ 

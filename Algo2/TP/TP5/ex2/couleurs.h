@@ -1,0 +1,17 @@
+#define NOIR			0x00
+#define BLEU			0x01
+#define VERT			0x02
+#define CYAN			0x03
+#define ROUGE			0x04
+#define MAGENTA			0x05
+#define MARRON			0x06
+#define GRIS_CLAIR		0x07
+#define GRIS_FONCE		0x08
+#define BLUE_CIEL		0x09
+#define VERT_POMME		0x0A
+#define CYAN_CLAIR		0x0B
+#define ROUGE_CLAIR		0x0C
+#define MAGENTA8CLAIR	0x0D
+#define JAUNE			0x0E
+#define BLANC			0x0F
+#define FOND_BLANC      0xF0

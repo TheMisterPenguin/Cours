@@ -1,0 +1,10 @@
+{
+    "makefile.extensionOutputFolder": "./.vscode",
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "c:\\Users\\anged\\Documents\\GitHub\\Cours\\Maths 3",
+            "binaryPath": "c:\\Users\\anged\\Documents\\GitHub\\Cours\\Maths 3\\matrice",
+            "binaryArgs": []
+        }
+    ]
+}
