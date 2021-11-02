@@ -7,7 +7,7 @@ mingw32-make.exe all --print-data-base --no-builtin-variables --no-builtin-rules
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Sun Oct 24 10:14:02 2021
+# Make data base, printed on Tue Nov 02 11:34:28 2021
 
 # Variables
 
@@ -32,7 +32,7 @@ HOMEDRIVE = C:
 # automatic
 ^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
 # makefile
-CURDIR := c:/Users/anged/Documents/GitHub/Cours/Algo2/TP/TP5/ex2
+CURDIR := c:/Users/anged/Documents/GitHub/Cours/Algo2/TD/TD9
 # default
 SHELL := sh.exe
 # environment
@@ -48,8 +48,6 @@ PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
 # makefile (from 'makefile', line 1)
 MAKEFILE_LIST :=  makefile
 # environment
-FPS_BROWSER_USER_PROFILE_STRING = Default
-# environment
 TMP = C:\Users\anged\AppData\Local\Temp
 # environment
 VSCODE_VERBOSE_LOGGING = true
@@ -58,11 +56,12 @@ PROGRAMW6432 = C:\Program Files
 # environment
 PROGRAMDATA = C:\ProgramData
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-ebdb2be6-6d98-4d1f-8595-8baa9822ef55-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-f961daff-cc6c-4aa3-a36b-8263745a768f-sock
 # environment
 VSCODE_CWD = C:\Users\anged\AppData\Local\Programs\Microsoft VS Code
 # environment
-PATH = C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Python38\python.exe;C:\TDM-GCC-64\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\Users\anged\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\anged\AppData\Local\Programs\Python\Python37\;C:\Users\anged\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Python38\python.exe;C:\Users\anged\.dotnet\tools;C:\Users\anged\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\anged\AppData\Local\GitHubDesktop\bin;
+PATH = C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Python38\python.exe;C:\TDM-GCC-64\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\Users\anged\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\anged\AppData\Local\Programs\Python\Python37\;C:\Users\anged\AppData\Local\Microsoft\WindowsApps;C:\Program Files\ 
+Python38\python.exe;C:\Users\anged\.dotnet\tools;C:\Users\anged\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\anged\AppData\Local\GitHubDesktop\bin;
 # environment
 COMMONPROGRAMW6432 = C:\Program Files\Common Files
 # environment
@@ -82,7 +81,7 @@ ELECTRON_RUN_AS_NODE = 1
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_14276_UZHWVCFJIOLZHLJD
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_12148_UIYHJDMADENIVZTA
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
@@ -124,7 +123,7 @@ ONEDRIVECOMMERCIAL = C:\Users\anged\OneDrive - Le Mans Universit�
 # default
 MAKE_VERSION := 3.82.90
 # makefile
-.DEFAULT_GOAL := fourmis.exe
+.DEFAULT_GOAL := ex1.exe
 # environment
 PROGRAMFILES(X86) = C:\Program Files (x86)
 # automatic
@@ -169,8 +168,7 @@ APPDATA = C:\Users\anged\AppData\Roaming
 TEMP = C:\Users\anged\AppData\Local\Temp
 # environment
 COMSPEC = C:\WINDOWS\system32\cmd.exe
-# def 
-ault
+# default
 MAKEFILES := 
 # automatic
 <F = $(notdir $<)
@@ -195,13 +193,11 @@ LANG = C
 # environment
 PROCESSOR_LEVEL = 23
 # environment
-FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
-# environment
-VSCODE_PID = 14276
+VSCODE_PID = 12148
 # environment
 USERDOMAIN_ROAMINGPROFILE = SHORTCIRCUIT
 # variable set hash-table stats:
-# Load=94/1024=9%, Rehash=0, Collisions=11/113=10%
+# Load=92/1024=9%, Rehash=0, Collisions=11/111=10%
 
 # Pattern-specific Variable Values
 
@@ -210,34 +206,42 @@ USERDOMAIN_ROAMINGPROFILE = SHORTCIRCUIT
 # Directories
 
 # C:\Users\anged\.dotnet\tools: could not be stat'd.
-# C:\Program Files\Python38\python.exe (key C:/Program Files/Python38/python.exe, mtime 1589402578): could not be opened.
-# C:\WINDOWS\System32\WindowsPowerShell\v1.0\ (key C:/WINDOWS/System32/WindowsPowerShell/v1.0/, mtime 1635012458): 32 files, no impossibilities.
-# . (key c:/Users/anged/Documents/GitHub/Cours/Algo2/TP/TP5/ex2, mtime 1634896877): 13 files, no impossibilities.
-# C:\Program Files (x86)\Common Files\Oracle\Java\javapath (key C:/Program Files (x86)/Common Files/Oracle/Java/javapath, mtime 1621956206): 5 files, no impossibilities.
-# C:\Program Files (x86)\dotnet\ (key C:/Program Files (x86)/dotnet/, mtime 1623702593): 8 files, no impossibilities.
-# C:\TDM-GCC-64\bin (key C:/TDM-GCC-64/bin, mtime 1624303215): 65 files, no impossibilities.
-# C:\Program Files\Git\cmd (key C:/Program Files/Git/cmd, mtime 1617469745): 8 files, no impossibilities.
+# C:\Program Files\Python38\python.exe (key C:/Program Files/Python38/python.exe, mtime 1589398978): could not be opened.
+# C:\WINDOWS\System32\WindowsPowerShell\v1.0\ (key C:/WINDOWS/System32/WindowsPowerShell/v1.0/, mtime 1635845477): 32 files, no impossibilities.
+# . (key c:/Users/anged/Documents/GitHub/Cours/Algo2/TD/TD9, mtime 1635849176): 10 files, no impossibilities.
+# C:\Program Files (x86)\Common Files\Oracle\Java\javapath (key C:/Program Files (x86)/Common Files/Oracle/Java/javapath, mtime 1621952606): 5 files, no impossibilities.
+# C:\Program Files (x86)\dotnet\ (key C:/Program Files (x86)/dotnet/, mtime 1623698993): 8 files, no impossibilities.
+# C:\TDM-GCC-64\bin (key C:/TDM-GCC-64/bin, mtime 1624299615): 65 files, no impossibilities.
+# C:\Program Files\Git\cmd (key C:/Program Files/Git/cmd, mtime 1617466145): 8 files, no impossibilities.
 # C:\WINDOWS\System32\OpenSSH\: could not be stat'd.
-# C:\WINDOWS (key C:/WINDOWS, mtime 1635021497): 140 files, no impossibilities.
-# C:\Users\anged\AppData\Local\Programs\Microsoft VS Code\bin (key C:/Users/anged/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1634834906): 4 files, no impossibilities.
-# C:\Program Files\Microsoft SQL Server\130\Tools\Binn\ (key C:/Program Files/Microsoft SQL Server/130/Tools/Binn/, mtime 1603743193): 4 files, no impossibilities.
-# C:\WINDOWS\System32\Wbem (key C:/WINDOWS/System32/Wbem, mtime 1635012390): 148 files, no impossibilities.
-# C:\Program Files\Common Files\Oracle\Java\javapath (key C:/Program Files/Common Files/Oracle/Java/javapath, mtime 1601739101): 6 files, no impossibilities.
-# C:\Users\anged\AppData\Local\Microsoft\WindowsApps (key C:/Users/anged/AppData/Local/Microsoft/WindowsApps, mtime 1635062985): 42 files, no impossibilities.
-# C:\Program Files\dotnet\ (key C:/Program Files/dotnet/, mtime 1623702502): 11 files, no impossibilities.
-# C:\WINDOWS\system32 (key C:/WINDOWS/system32, mtime 1635063162): 3041 files, no impossibilities.
-# C:\Users\anged\AppData\Local\Programs\Python\Python37\ (key C:/Users/anged/AppData/Local/Programs/Python/Python37/, mtime 1624048980): 18 files, no impossibilities.
-# C:\Users\anged\AppData\Local\GitHubDesktop\bin (key C:/Users/anged/AppData/Local/GitHubDesktop/bin, mtime 1616783545): 4 files, no impossibilities.
-# C:\Users\anged\AppData\Local\Programs\Python\Python37\Scripts\ (key C:/Users/anged/AppData/Local/Programs/Python/Python37/Scripts/, mtime 1624048788): 23 files, no impossibilities.
-# C:\Program Files\PuTTY\ (key C:/Program Files/PuTTY/, mtime 1622408258): 12 files, no impossibilities.
+# C:\WINDOWS (key C:/WINDOWS, mtime 1635846454): 140 files, no impossibilities.
+# C:\Users\anged\AppData\Local\Programs\Microsoft VS Code\bin (key C:/Users/anged/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1634831306): 4 files, no impossibilities.
+# C:\Program Files\Microsoft SQL Server\130\Tools\Binn\ (key C:/Program Files/Microsoft SQL Server/130/Tools/Binn/, mtime 1603739593): 4 files, no impossibilities.
+# C:\WINDOWS\System32\Wbem (key C:/WINDOWS/System32/Wbem, mtime 1635845447): 148 files, no impo 
+ssibilities.
+# C:\Program Files\Common Files\Oracle\Java\javapath (key C:/Program Files/Common Files/Oracle/Java/javapath, mtime 1601735501): 6 files, no impossibilities.
+# C:\Users\anged\AppData\Local\Microsoft\WindowsApps (key C:/Users/anged/AppData/Local/Microsoft/WindowsApps, mtime 1635848503): 42 files, no impossibilities.
+# C:\Program Files\dotnet\ (key C:/Program Files/dotnet/, mtime 1623698902): 11 files, no impossibilities.
+# C:\WINDOWS\system32 (key C:/WINDOWS/system32, mtime 1635846947): 3041 files, no impossibilities.
+# C:\Users\anged\AppData\Local\Programs\Python\Python37\ (key C:/Users/anged/AppData/Local/Programs/Python/Python37/, mtime 1624045380): 18 files, no impossibilities.
+# C:\Users\anged\AppData\Local\GitHubDesktop\bin (key C:/Users/anged/AppData/Local/GitHubDesktop/bin, mtime 1616779945): 4 files, no impossibilities.
+# C:\Users\anged\AppData\Local\Programs\Python\Python37\Scripts\ (key C:/Users/anged/AppData/Local/Programs/Python/Python37/Scripts/, mtime 1624045188): 23 files, no impossibilities.
+# C:\Program Files\PuTTY\ (key C:/Program Files/PuTTY/, mtime 1622404658): 12 files, no impossibilities.
 
-# 3584 files, no impossibilities in 21 directories.
+# 3581 files, no impossibilities in 21 directories.
 
 # Implicit Rules
 
 # No implicit rules.
 
 # Files
+
+ex1.exe: ex1.o file.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 2):
+	gcc ex1.o file.o -o ex1.exe
 
 # Not a target:
 all:
@@ -252,26 +256,26 @@ all:
 #  Modification time never checked.
 #  File has not been updated.
 
-listesF.o: listesF.c listesF.h
+# Not a target:
+makefile:
+#  Implicit rule search has been done.
+#  Last modified 2021-11-02 11:34:23
+#  File has been updated.
+#  Successfully updated.
+
+file.o: file.c
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'makefile', line 6):
-	gcc -c listesF.c
+	gcc -c file.c
 
-# Not a target:
-makefile:
-#  Implicit rule search has been done.
-#  Last modified 2021-10-21 15:11:16
-#  File has been updated.
-#  Successfully updated.
-
-fourmis.o: fourmis.c listesF.h
+ex1.o: ex1.c
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'makefile', line 4):
-	gcc -c fourmis.c
+	gcc -c ex1.c 
 
 # Not a target:
 .DEFAULT:
@@ -280,47 +284,34 @@ fourmis.o: fourmis.c listesF.h
 #  File has not been updated.
 
 # Not a target:
-listesF.c:
+file.c:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
 # Not a target:
-fourmis.c:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-fourmis.exe: listesF.o fourmis.o
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'makefile', line 2):
-	gcc fourmis.o listesF.o -o fourmis.exe
-
-# Not a target:
-listesF.h:
+ex1.c:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=10/1024=1%, Rehash=0, Collisions=0/28=0%
+# Load=9/1024=1%, Rehash=0, Collisions=0/25=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 7 (5) / strings = 3542 / storage = 53823 B / avg = 15 B
-# current buf: size = 8174 B / used = 4842 B / count = 281 / avg = 17 B
-# other used: total = 45649 B / count = 3261 / avg = 13 B
-# other free: total = 63 B / max = 15 B / min = 3 B / avg = 10 B
+# strcache buffers: 7 (6) / strings = 3540 / storage = 53784 B / avg = 15 B
+# current buf: size = 8174 B / used = 4788 B / count = 277 / avg = 17 B
+# other used: total = 45610 B / count = 3263 / avg = 13 B
+# other free: total = 48 B / max = 15 B / min = 2 B / avg = 8 B
 
-# strcache performance: lookups = 3623 / hit rate = 2%
+# strcache performance: lookups = 3618 / hit rate = 2%
 # hash-table stats:
-# Load=3542/8192=43%, Rehash=0, Collisions=1231/3623=34%
-# Finished Make data base on Sun Oct 24 10:14:02 2021
+# Load=3540/8192=43%, Rehash=0, Collisions=1231/3618=34%
+# Finished Make data base on Tue Nov 02 11:34:28 2021
 
  
 mingw32-make.exe: *** No rule to make target 'all'.  Stop.
